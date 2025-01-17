@@ -1,0 +1,31 @@
+/* Custom CSS if you want to add more styles */
+
+.product-card {
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    font-size: 32px; /* Increase the size of the icons */
+    margin: 10px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.fa-facebook {
+    color: #1877F2; /* Facebook's official blue color */
+}
+
+.fa-instagram {
+    background: -webkit-linear-gradient(#f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram gradient */
+    -webkit-background-clip: text; /* Clip the gradient to text */
+    -webkit-text-fill-color: transparent; /* Make the icon follow the gradient */
+}
+
