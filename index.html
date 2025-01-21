@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,43 @@
     <title>PAXCOMS INTERIORS</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hero {
+            background: url('images/background.jpg') no-repeat center center/cover;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon {
+            color: #007bff;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #f39c12;
+        }
+    </style>
 </head>
+
 <body class="bg-gray-100">
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 w-full bg-transparent z-50">
@@ -18,19 +54,18 @@
                 <li><a href="#about" class="text-blue-500 hover:text-yellow-500">About</a></li>
                 <li><a href="#services" class="text-blue-500 hover:text-yellow-500">Services</a></li>
                 <li><a href="#products" class="text-blue-500 hover:text-yellow-500">Products</a></li>
-                <li><a href="#contact" class="text-blue-500 hover:text-yellow-500">Contact</a></li>                
+                <li><a href="#contact" class="text-blue-500 hover:text-yellow-500">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Header Section -->
-    <header class="bg-cover bg-center h-screen" style="background-image: url('images/background.jpg');">
-        <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-white">
-            <img src="images/logo.png" alt="PAXCOMS Logo" class="mb-5 w-32 h-32">
-            <h1 class="text-5xl font-bold">PAXCOMS INTERIORS</h1>
-            <p class="mt-2 text-2xl">Transforming Spaces, Enhancing Lives</p>
-            <a href="#about" class="mt-5 px-6 py-2 bg-yellow-500 text-white rounded-full hover:bg-yellow-600">Learn More</a>
-        </div>
+    <header class="hero h-screen flex flex-col justify-center items-center text-white">
+        <img src="images/logo.png" alt="PAXCOMS Logo" class="mb-5 w-32 h-32">
+        <h1 class="text-5xl font-bold">PAXCOMS INTERIORS</h1>
+        <p class="mt-2 text-2xl">Transforming Spaces, Enhancing Lives</p>
+        <a href="#about" class="mt-5 px-6 py-2 bg-yellow-500 text-white rounded-full hover:bg-yellow-600">Learn
+            More</a>
     </header>
 
     <!-- About Section -->
@@ -38,10 +73,13 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center">About Us</h2>
             <p class="mt-6 text-center text-lg">
-                Paxcomsinterior is a leading interior design and contracting company that specializes in creating functional, aesthetically pleasing, and sustainable spaces for residential, commercial, and industrial clients. With a passion for innovation and excellence, our team of experts delivers top-notch solutions that exceed our clients' expectations.
+                Paxcoms Interiors is a leading interior design and contracting company that specializes in creating
+                functional, aesthetically pleasing, and sustainable spaces for residential, commercial, and industrial
+                clients. With a passion for innovation and excellence, our team of experts delivers top-notch solutions
+                that exceed our clients' expectations.
             </p>
             <div class="mt-10 flex justify-center">
-                <img src="images/interior.jpg" alt="Interior Design" class="rounded-lg shadow-lg w-3/4">
+                <img src="images/interior.jpg" alt="Interior Design" class="rounded-lg shadow-lg w-3/4 hover-grow">
             </div>
         </div>
     </section>
@@ -51,25 +89,30 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-                <div class="p-6 bg-white rounded-lg shadow-md">
+                <div class="p-6 bg-white rounded-lg shadow-md hover-grow">
                     <h3 class="text-3xl font-bold mb-4">Interior Design & Space Planning</h3>
-                    <p>We offer innovative interior design and space planning services, ensuring that every space is both functional and aesthetically appealing.</p>
+                    <p>We offer innovative interior design and space planning services, ensuring that every space is both
+                        functional and aesthetically appealing.</p>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-md">
+                <div class="p-6 bg-white rounded-lg shadow-md hover-grow">
                     <h3 class="text-3xl font-bold mb-4">Contracting & Project Management</h3>
-                    <p>Our contracting and project management services ensure that your projects are completed on time, within budget, and to the highest standards.</p>
+                    <p>Our contracting and project management services ensure that your projects are completed on time,
+                        within budget, and to the highest standards.</p>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-md">
+                <div class="p-6 bg-white rounded-lg shadow-md hover-grow">
                     <h3 class="text-3xl font-bold mb-4">Furniture, Fixtures & Equipment (FF&E)</h3>
-                    <p>We provide sourcing and procurement of high-quality furniture, fixtures, and equipment to complement your interiors.</p>
+                    <p>We provide sourcing and procurement of high-quality furniture, fixtures, and equipment to
+                        complement your interiors.</p>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-md">
+                <div class="p-6 bg-white rounded-lg shadow-md hover-grow">
                     <h3 class="text-3xl font-bold mb-4">Sustainable Design Solutions</h3>
-                    <p>We integrate sustainable design practices into all of our projects, minimizing environmental impact while enhancing energy efficiency.</p>
+                    <p>We integrate sustainable design practices into all of our projects, minimizing environmental
+                        impact while enhancing energy efficiency.</p>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-md">
+                <div class="p-6 bg-white rounded-lg shadow-md hover-grow">
                     <h3 class="text-3xl font-bold mb-4">Sales of Interior Products</h3>
-                    <p>We offer a range of products, including wallpapers, wall panels, window blinds, bedsheets, foams, and carpet grass (artificial turf).</p>
+                    <p>We offer a range of products, including wallpapers, wall panels, window blinds, bedsheets, foams,
+                        and carpet grass (artificial turf).</p>
                 </div>
             </div>
         </div>
@@ -80,27 +123,27 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center">Our Products</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-                <div class="product-card">
+                <div class="product-card hover-grow">
                     <img src="images/wallpaper.jpg" alt="Wallpapers" class="rounded-lg shadow-lg w-full h-60 object-cover">
                     <h3 class="text-2xl font-bold mt-4">Wallpapers</h3>
                 </div>
-                <div class="product-card">
+                <div class="product-card hover-grow">
                     <img src="images/window-blinds.jpg" alt="Window Blinds" class="rounded-lg shadow-lg w-full h-60 object-cover">
                     <h3 class="text-2xl font-bold mt-4">Window Blinds</h3>
                 </div>
-                <div class="product-card">
+                <div class="product-card hover-grow">
                     <img src="images/curtains.jpg" alt="Curtains" class="rounded-lg shadow-lg w-full h-60 object-cover">
                     <h3 class="text-2xl font-bold mt-4">Curtains</h3>
                 </div>
-                <div class="product-card">
+                <div class="product-card hover-grow">
                     <img src="images/carpet-grass.jpg" alt="Carpet Grass" class="rounded-lg shadow-lg w-full h-60 object-cover">
                     <h3 class="text-2xl font-bold mt-4">Carpet Grass</h3>
                 </div>
-                <div class="product-card">
+                <div class="product-card hover-grow">
                     <img src="images/carpet.jpg" alt="Carpets" class="rounded-lg shadow-lg w-full h-60 object-cover">
                     <h3 class="text-2xl font-bold mt-4">Carpets</h3>
                 </div>
-                <div class="product-card">
+                <div class="product-card hover-grow">
                     <img src="images/accessories.jpg" alt="Accessories" class="rounded-lg shadow-lg w-full h-60 object-cover">
                     <h3 class="text-2xl font-bold mt-4">Accessories</h3>
                 </div>
@@ -116,32 +159,53 @@
                 <h3 class="text-2xl font-bold mb-4">Address</h3>
                 <p class="text-lg">PLOT 3 BLOCK 33 WOJI ESTATE RD BY YKC JUNCTION</p>
                 <p class="text-lg">Phone: 08157355547</p>
+                <p class="text-lg">Email: paxcomsinteriors@gmail.com</p>
             </div>
-            <div class="text-center mb-10">
-                <h3 class="text-2xl font-bold mb-4">Email Us</h3>
-                <a href="mailto:paxcomsinteriors247@gmail.com" class="text-blue-600 hover:text-yellow-500 text-xl">paxcomsinteriors247@gmail.com</a><br>
-                <a href="mailto:paxcomsinteriors@yahoo.com" class="text-blue-600 hover:text-yellow-500 text-xl">paxcomsinteriors@yahoo.com</a>
-            </div>
-
-          <!-- Social Media Section -->
-<section id="contact" class="py-20 bg-gray-100">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-10">Follow Us</h2>
-        <div class="text-center">
-            <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="text-blue-600 hover:text-yellow-500 text-3xl"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-blue-600 hover:text-yellow-500 text-3xl"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-blue-600 hover:text-yellow-500 text-3xl"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-blue-600 hover:text-yellow-500 text-3xl"><i class="fab fa-linkedin"></i></a>
+            <div class="flex justify-center">
+                <form action="#" method="POST" class="w-full md:w-2/3 lg:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-lg font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-lg font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-lg font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                            required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors">Send
+                        Message</button>
+                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-blue-600 text-white py-4 text-center">
-    <p>&copy; 2025 PAXCOMS INTERIORS. All rights reserved.</p>
-</footer>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 PAXCOMS INTERIORS. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
